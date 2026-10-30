@@ -14,12 +14,14 @@ sumaListaTuplas :: [(Int, Int)] -> [Int]
 sumaListaTuplas [] = []
 sumaListaTuplas ((x, y):xs) = (x + y) : sumaListaTuplas xs
 
--- 4.Contamos con una base de datos de películas representada con una lista de tuplas. 
--- Cada tupla contiene la siguiente información: (<Nombre de la película>, <Año de estreno>,<Duración de la 
--- película>,<Nombre del director>). Observamos entonces que el tipo de la tupla que representa 
--- cada película es (String, Int, Int, String). 
+{-
+ 4.Contamos con una base de datos de películas representada con una lista de tuplas. 
+ Cada tupla contiene la siguiente información: (<Nombre de la película>, <Año de estreno>,<Duración de la 
+ película>,<Nombre del director>). Observamos entonces que el tipo de la tupla que representa 
+ cada película es (String, Int, Int, String). 
+-}
 
--- 4a.Definir la función verTodas : [(String, Int, Int, String)] → Int que dada una lista de películas 
+-- 4a. Definir la función verTodas : [(String, Int, Int, String)] → Int que dada una lista de películas 
 -- devuelva el tiempo que tardaría en verlas a todas. 
 verTodas :: [(String, Int, Int, String)] -> Int
 verTodas [] = 0
